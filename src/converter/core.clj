@@ -1,16 +1,14 @@
 (ns converter.core
+  (:require [clojure.tools.cli :refer [parse-opts]])
   (:gen-class))
 
-(defn- values-in [arg]
-  (cond
-    (.startsWith arg "--from=")
-    {:from (.substring arg 7)}
-    (.startsWith arg "--to")
-    {:to (.substring arg 5)}
-    :else {}))
+(def options
+  [["-f" "--from currency base" "currency base to converter" :default "eur"]
+   ["-t" "--to destination currency" "currency we want to know the value"]])
 
 (defn -main
-  "I don't do a whole lot ... yet."
+  "app bootstrap!"
   [& args]
   (println "we have" (count args) "args")
-  (println "They are: " (map values-in args)))
+  (println "They are: " (:options
+                         (parse-opts args options))))
