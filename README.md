@@ -1,5 +1,7 @@
 # converter
 
+[![Clojure CI](https://github.com/aristotelesbr/converter/actions/workflows/clojure.yml/badge.svg?branch=main)](https://github.com/aristotelesbr/converter/actions/workflows/clojure.yml)
+
 This project use [currency converter api](https://free.currencyconverterapi.com/free-api-key/). Before use `converter` you must be register a token and create `.env` file in root directory this project with you key, like this:
 
 ```bash
