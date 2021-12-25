@@ -1,32 +1,30 @@
 # converter
 
-FIXME: description
+## Install
+You must be have the `lein` tool in you machine.
 
-## Installation
+Install dependencies
+```bash
+$ lein deps
+```
 
-Download from http://example.com/FIXME.
+## Run tests
+
+**📚 in progress ⌛️**
 
 ## Usage
 
-FIXME: explanation
-
-    $ java -jar converter-0.1.0-standalone.jar [args]
-
-## Options
-
-FIXME: listing of options this app accepts.
+```bash
+$ lein run --from=USD --to=BRL
+"1 USD equals to 5.674861 in BRL" 😨
+```
 
 ## Examples
 
-...
-
-### Bugs
-
-...
-
-### Any Other Sections
-### That You Think
-### Might be Useful
+```bash
+$ lein run --from=EUR --to=BRL
+"1 EUR equals to 6.435513 in BRL" 😭
+```
 
 ## License
 
