@@ -1,5 +1,11 @@
 # converter
 
+This project use [currency converter api](https://free.currencyconverterapi.com/free-api-key/). Before use `converter` you must be register a token and create `.env` file in root directory this project with you key, like this:
+
+```bash
+$ echo "API_KEY=123abc" > .env
+```
+
 ## Install
 You must be have the `lein` tool in you machine.
 
